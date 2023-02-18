@@ -126,7 +126,7 @@ syntax for multiple parameter:
   Signature: `[receiver message: argument?]`, like in `[Object alloc]`
 
 - Why do the expression "Sending a message" is used?
-    - because a method invocation is not bounded to any particular instance method in compile time, like in swift. In runtime, every time a method gets executed, another method called objc_sendMessage() is called, and the binding to an specific instance method is made. 
+    - because a method invocation is not bounded to any particular instance method in compile time, like in swift. In runtime, every time a method gets executed, another method called `objc_sendMessage()` is called in NSObject, and the binding to an specific instance method is made. 
     - (*)(P!) study more about Message Dispatch in Object-C. Maybe it's the only way.
 
 - `dot syntax` works to access properties.
@@ -164,7 +164,21 @@ if (condition) {
 }
 ```
 
+- ternary sintax:
+`condition ? statement-true : statement-false;`
 
+
+## Modulo 4 - Port an App from Object-C to Swift.
+
+- When migrating:
+    - Handling everything as optional - to avoid things to crash in runtime
+- iOS Engineer skills:
+    - Colaboration skills.
+    - General accumen of Software Engineer.
+        - architectural overview.
+    - Spend some time writting obj-c code.
+
+- A category in obj-c allow us to add functionallity in a class without the need of subclassing - in Swift, is the equivalente of an extension. [4]
 
 ## References
 [1] https://bignerdranch.com/blog/property-values/
@@ -172,5 +186,6 @@ if (condition) {
 [3] https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectOwnership.html
 [3] http://blog.reigndesign.com/blog/debugging-retain-cycles-in-objective-c-four-likely-culprits/
 [3] https://www.bignerdranch.com/blog/actually-finding-a-memory-management-error-with-instruments/\
+[4] https://www.google.com/search?client=safari&rls=en&q=obj-c+category&ie=UTF-8&oe=UTF-8
 
 ## Marks Syntax
