@@ -11,6 +11,13 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
     
+    @IBOutlet weak var gifImageView: UIImageView!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let pocGif = UIImage.gif(name: "hotlineBling")
+        gifImageView.image = pocGif
+    }
     
     @IBAction func launchVideoCamera(sender: AnyObject) {
         launchCamera()
