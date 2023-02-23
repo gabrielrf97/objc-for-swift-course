@@ -41,7 +41,7 @@ extension UIViewController: UIImagePickerControllerDelegate {
         if mediaType == (kUTTypeMovie as String),
         let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL,
         let videoPath = videoURL.absoluteString {
-            UISaveVideoAtPathToSavedPhotosAlbum(videoPath, nil, nil, nil)
+            try? convertVideoToGifAndPresentScreen(videoURL: videoURL as URL)
             dismiss(animated: true)
         }
     }
