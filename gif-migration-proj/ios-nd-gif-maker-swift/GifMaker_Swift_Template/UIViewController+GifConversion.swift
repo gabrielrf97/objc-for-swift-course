@@ -20,11 +20,19 @@ extension UIViewController {
         case conversion
     }
     
-    func convertVideoToGif(videoURL: URL) throws -> URL{
+    func convertVideoToGifAndPresentScreen(videoURL: URL) throws {
         let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
         guard let gifURL = regift.createGif() else {
             throw GifCreationError.conversion
         }
-        return gifURL
+        displayGif(url: gifURL)
+    }
+    
+    func displayGif(url: URL) {
+        guard let gifEditorVC = storyboard?.instantiateViewController(withIdentifier: "GifEditorViewController") as? GifEditorViewController else {
+            return
+        }
+        gifEditorVC.gifURL = url
+        navigationController?.pushViewController(gifEditorVC, animated: true)
     }
 }

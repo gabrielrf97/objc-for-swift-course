@@ -8,11 +8,6 @@
 import MobileCoreServices
 import UIKit
 
-extension UIViewController {
-    
-    
-}
-
 extension UIViewController: UIImagePickerControllerDelegate {
     
     func launchCamera() {
