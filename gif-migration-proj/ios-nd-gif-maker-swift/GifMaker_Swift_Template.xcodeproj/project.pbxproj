@@ -14,6 +14,7 @@
 		BF14257729A1732200920F55 /* GifEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14257629A1732200920F55 /* GifEditorViewController.swift */; };
 		BF14257929A1733800920F55 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF14257829A1733800920F55 /* PreviewViewController.swift */; };
 		BF64BA1829A7D22500BEB6F4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64BA1729A7D22500BEB6F4 /* UIImage+Gif.swift */; };
+		BF64BA1A29A7D69B00BEB6F4 /* UIViewController+GifConvertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF64BA1929A7D69B00BEB6F4 /* UIViewController+GifConvertion.swift */; };
 		EDDFC4DC1CE261A600A586CA /* tinaFeyHiFive.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */; };
 		EDDFC4DE1CE261C400A586CA /* hotlineBling.gif in Resources */ = {isa = PBXBuildFile; fileRef = EDDFC4DD1CE261C400A586CA /* hotlineBling.gif */; };
 		EDFAA8ED1CDA99A500D2CB08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFAA8EC1CDA99A500D2CB08 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		BF14257629A1732200920F55 /* GifEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifEditorViewController.swift; sourceTree = "<group>"; };
 		BF14257829A1733800920F55 /* PreviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		BF64BA1729A7D22500BEB6F4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		BF64BA1929A7D69B00BEB6F4 /* UIViewController+GifConvertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GifConvertion.swift"; sourceTree = "<group>"; };
 		EDDFC4DB1CE261A600A586CA /* tinaFeyHiFive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = tinaFeyHiFive.gif; sourceTree = "<group>"; };
 		EDDFC4DD1CE261C400A586CA /* hotlineBling.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = hotlineBling.gif; sourceTree = "<group>"; };
 		EDFAA8E91CDA99A500D2CB08 /* GifMaker_Swift_Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GifMaker_Swift_Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 			children = (
 				BF14257429A1730000920F55 /* UIViewController+UIImagePickerViewController.swift */,
 				BF64BA1729A7D22500BEB6F4 /* UIImage+Gif.swift */,
+				BF64BA1929A7D69B00BEB6F4 /* UIViewController+GifConvertion.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				TargetAttributes = {
 					EDFAA8E81CDA99A500D2CB08 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = D2J564QJA4;
 						LastSwiftMigration = 0800;
 					};
 				};
@@ -206,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF64BA1A29A7D69B00BEB6F4 /* UIViewController+GifConvertion.swift in Sources */,
 				EDFAA9201CDA9C3100D2CB08 /* Regift.swift in Sources */,
 				BF14257729A1732200920F55 /* GifEditorViewController.swift in Sources */,
 				BF14257229A170EA00920F55 /* WelcomeViewController.swift in Sources */,
@@ -327,9 +332,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2J564QJA4;
 				INFOPLIST_FILE = GifMaker_Swift_Template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.gabriel.GifMaker-Swift-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -339,9 +345,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D2J564QJA4;
 				INFOPLIST_FILE = GifMaker_Swift_Template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.GifMaker-Swift-Template";
+				PRODUCT_BUNDLE_IDENTIFIER = "Udacity.gabriel.GifMaker-Swift-Template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
