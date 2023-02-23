@@ -22,17 +22,19 @@ extension UIViewController {
     
     func convertVideoToGifAndPresentScreen(videoURL: URL) throws {
         let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
-        guard let gifURL = regift.createGif() else {
+        guard let gifURL = regift.createGif()
+             else {
             throw GifCreationError.conversion
         }
-        displayGif(url: gifURL)
+        let gif = Gif(url: gifURL, videoURL: videoURL, caption: nil)
+        display(gif: gif)
     }
     
-    func displayGif(url: URL) {
+    func display(gif: Gif) {
         guard let gifEditorVC = storyboard?.instantiateViewController(withIdentifier: "GifEditorViewController") as? GifEditorViewController else {
             return
         }
-        gifEditorVC.gifURL = url
+        gifEditorVC.gif = gif
         navigationController?.pushViewController(gifEditorVC, animated: true)
     }
 }

@@ -7,7 +7,7 @@
 //  Copyright (c) 2014 Matthew Palmer. All rights reserved.
 //
 
-import UIKit
+import UIKit 
 import MobileCoreServices
 import ImageIO
 import AVFoundation
