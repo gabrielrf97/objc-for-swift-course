@@ -59,18 +59,14 @@ extension GifEditorViewController {
     }
     
     @objc func keyboardWillShow(notification: Notification) {
-        if (self.view.frame.origin.y >= 0) {
-            var rect = self.view.frame;
-            rect.origin.y -= getKeyboardHeight(notification)
-            self.view.frame = rect;
+        if (view.frame.origin.y >= 0) {
+            view.frame.origin.y -= getKeyboardHeight(notification)
         }
     }
     
     @objc func keyboardWillHide(notification: Notification) {
-        if (self.view.frame.origin.y < 0) {
-            var rect = self.view.frame;
-            rect.origin.y += getKeyboardHeight(notification)
-            self.view.frame = rect;
+        if (view.frame.origin.y < 0) {
+            view.frame.origin.y += getKeyboardHeight(notification)
         }
     }
     
