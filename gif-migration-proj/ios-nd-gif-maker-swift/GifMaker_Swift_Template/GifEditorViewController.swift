@@ -32,6 +32,29 @@ class GifEditorViewController: UIViewController {
             gifImageView.image = gif.image
         }
     }
+    
+    @IBAction func presentPreview() {
+        
+        guard let gifWithCaption = createGifWithCaption(),
+        let previewVC = storyboard?.instantiateViewController(withIdentifier: "PreviewViewController") as? PreviewViewController else { return }
+        
+        previewVC.gif = gifWithCaption
+        
+        navigationController?.pushViewController(previewVC, animated: true)
+    }
+    
+    private func createGifWithCaption() -> Gif? {
+        let caption = captionTextField.text
+        let font = captionTextField.font
+        
+        guard let gif = gif, let videoURL = gif.videoURL else { return nil }
+        
+        let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime)
+        
+        guard let gifURL = regift.createGif(caption, font: font) else { return nil }
+        
+        return Gif(url: gifURL, videoURL: videoURL, caption: caption)
+    }
 }
 
 //MARK: UITextFieldDelegate methods

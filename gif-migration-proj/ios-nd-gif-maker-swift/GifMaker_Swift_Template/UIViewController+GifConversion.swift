@@ -9,10 +9,9 @@
 import UIKit
 import Foundation
  
-fileprivate let frameCount = 16
-fileprivate let delayTime : Float = 0.2
-fileprivate let loopCount = 0
-
+let frameCount = 16
+let delayTime : Float = 0.2
+let loopCount = 0
 
 extension UIViewController {
     

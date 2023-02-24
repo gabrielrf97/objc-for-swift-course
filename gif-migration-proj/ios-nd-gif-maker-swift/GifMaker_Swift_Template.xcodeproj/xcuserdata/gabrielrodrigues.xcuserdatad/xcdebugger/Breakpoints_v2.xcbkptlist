@@ -8,14 +8,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D9B6724A-A800-4EC0-BC7E-8212F5D2BBA7"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "keyboardWillShow(notification:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -24,16 +24,208 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6EF2FE5C-F7C5-4181-B8D3-78E7677B4474"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "keyboardWillHide(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2CEC6B8F-A624-4151-BD52-2BB8290B3E52"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "keyboardWillHide(notification:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "presentPreview()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2CEC6B8F-A624-4151-BD52-2BB8290B3E52 - 677bcc95ded33283"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.presentPreview() -&gt; ()"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "2CEC6B8F-A624-4151-BD52-2BB8290B3E52 - 677bcc95ded33283"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.presentPreview() -&gt; ()"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "68">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BEE99C1-B8BB-4257-8618-0F2FD3A37A03"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "presentPreview()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2BD5AF46-6DFE-485F-BD5F-350C53631A7D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "createGifWithCaption()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2BD5AF46-6DFE-485F-BD5F-350C53631A7D - 2f0f48115f0ed47c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.createGifWithCaption() -&gt; Swift.Optional&lt;GifMaker_Swift_Template.Gif&gt;"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "364">
+               </Location>
+               <Location
+                  uuid = "2BD5AF46-6DFE-485F-BD5F-350C53631A7D - 2f0f48115f0ed47c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.createGifWithCaption() -&gt; Swift.Optional&lt;GifMaker_Swift_Template.Gif&gt;"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "572">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F01BD08D-6617-474D-BDC5-7EF88AFE3E95"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "createGifWithCaption()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "382B496F-61BD-48F9-B5D1-B97D4664C362"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "createGifWithCaption()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0B9325F7-21E0-4DE6-A29A-3F69EEFF79B7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GifMaker_Swift_Template/GifEditorViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "createGifWithCaption()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0B9325F7-21E0-4DE6-A29A-3F69EEFF79B7 - 2f0f48115f0ed555"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.createGifWithCaption() -&gt; Swift.Optional&lt;GifMaker_Swift_Template.Gif&gt;"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1336">
+               </Location>
+               <Location
+                  uuid = "0B9325F7-21E0-4DE6-A29A-3F69EEFF79B7 - 2f0f48115f0ed555"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GifMaker_Swift_Template.GifEditorViewController.createGifWithCaption() -&gt; Swift.Optional&lt;GifMaker_Swift_Template.Gif&gt;"
+                  moduleName = "GifMaker_Swift_Template"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabrielrodrigues/Desktop/projects/courses/obj-c-for-swift/gif-migration-proj/ios-nd-gif-maker-swift/GifMaker_Swift_Template/GifEditorViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "1664">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
