@@ -15,7 +15,7 @@ extension UIViewController: UIImagePickerControllerDelegate {
         self.present(picker, animated: true)
     }
     
-    func openGalery() {
+    func openGallery() {
         let picker = createPickerViewController(from: .photoLibrary)
         self.present(picker, animated: true)
     }

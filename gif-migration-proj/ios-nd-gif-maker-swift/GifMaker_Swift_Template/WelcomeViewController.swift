@@ -20,6 +20,33 @@ class WelcomeViewController: UIViewController {
     }
     
     @IBAction func launchVideoCamera(sender: AnyObject) {
-        launchCamera()
+        presentVideoSourceOptions()
+    }
+    
+    private func presentVideoSourceOptions() {
+        
+        if (!UIImagePickerController.isSourceTypeAvailable(.camera)) {
+            openGallery()
+        } else {
+            let sourcePickActionSheet = UIAlertController(title: "Create new GIF", message: nil, preferredStyle: .actionSheet)
+            sourcePickActionSheet.view.tintColor = UIColor(red: 255.0/255.0, green: 65.0/255.0, blue: 112.0/255.0, alpha: 1.0)
+    
+            let recordVideo = UIAlertAction(title: "Record a Video", style: .default, handler: { _ in
+                self.launchCamera()
+            })
+        
+            let chooseFromGallery = UIAlertAction(title: "Choose from Existing", style: .default, handler: {_ in
+                self.openGallery()
+            })
+            
+            let cancel = UIAlertAction(title: "Cancel", style: .destructive)
+        
+        
+            sourcePickActionSheet.addAction(recordVideo)
+            sourcePickActionSheet.addAction(chooseFromGallery)
+            sourcePickActionSheet.addAction(cancel)
+            
+            present(sourcePickActionSheet, animated: true)
+        }
     }
 }
