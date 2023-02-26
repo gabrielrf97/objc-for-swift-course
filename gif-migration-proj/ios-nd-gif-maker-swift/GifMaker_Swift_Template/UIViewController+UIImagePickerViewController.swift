@@ -12,6 +12,7 @@ extension UIViewController: UIImagePickerControllerDelegate {
     
     func launchCamera() {
         let picker = createPickerViewController(from: .camera)
+        picker.allowsEditing = true
         self.present(picker, animated: true)
     }
     
@@ -39,9 +40,11 @@ extension UIViewController: UIImagePickerControllerDelegate {
         }
         
         if mediaType == (kUTTypeMovie as String),
-        let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL,
-        let videoPath = videoURL.absoluteString {
-            try? convertVideoToGifAndPresentScreen(videoURL: videoURL as URL)
+        let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL {
+            let videoPath = videoURL.absoluteString
+            let startedTrim = info["UIImagePickerControllerVideoEditingStart"] as? Float
+            let finishedTrim = info["UIImagePickerControllerVideoEditingEnd"] as? Float
+            try? convertVideoToGifAndPresentScreen(videoURL: videoURL as URL, trimmedStart: startedTrim, trimmedEnd: finishedTrim)
             dismiss(animated: true)
         }
     }

@@ -19,8 +19,17 @@ extension UIViewController {
         case conversion
     }
     
-    func convertVideoToGifAndPresentScreen(videoURL: URL) throws {
-        let regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
+    func convertVideoToGifAndPresentScreen(videoURL: URL, trimmedStart: Float?, trimmedEnd: Float?) throws {
+        var regift: Regift
+        
+        if let trimmedStart = trimmedStart,
+           let trimmedEnd = trimmedEnd {
+            let duration = trimmedEnd - trimmedStart
+            regift = Regift(sourceFileURL: videoURL, startTime: trimmedStart, duration: duration, frameRate: frameCount)
+        } else {
+            regift = Regift(sourceFileURL: videoURL, frameCount: frameCount, delayTime: delayTime, loopCount: loopCount)
+        }
+    
         guard let gifURL = regift.createGif()
              else {
             throw GifCreationError.conversion
