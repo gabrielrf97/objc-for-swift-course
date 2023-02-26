@@ -41,10 +41,9 @@ extension UIViewController: UIImagePickerControllerDelegate {
         
         if mediaType == (kUTTypeMovie as String),
         let videoURL = info[UIImagePickerControllerMediaURL] as? NSURL {
-            let videoPath = videoURL.absoluteString
             let startedTrim = info["UIImagePickerControllerVideoEditingStart"] as? Float
             let finishedTrim = info["UIImagePickerControllerVideoEditingEnd"] as? Float
-            try? convertVideoToGifAndPresentScreen(videoURL: videoURL as URL, trimmedStart: startedTrim, trimmedEnd: finishedTrim)
+            cropVideoToSquare(rawVideoURL: videoURL as URL, trimStart: startedTrim, trimEnd: finishedTrim)
             dismiss(animated: true)
         }
     }
